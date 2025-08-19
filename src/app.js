@@ -20,4 +20,18 @@ app.use(signedCookie())
 
 // cookie parser is used to access cookis of server from brower basically to performing CRUD OPERATION ON COOKIES
 
+
+
+
+//routes import 
+
+import userRouter from './routes/user.routes.js'
+
+
+// routes decleartion
+
+app.use("/api/v1/users", userRouter)
+
+//http://localhost:8000/api/v1/users/register
+
 export { app }
