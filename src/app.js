@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import cookieParser, { signedCookie } from "cookie-parser"
+import cookieParser from "cookie-parser"
 const app = express()
 
 
@@ -16,7 +16,7 @@ app.use(express.static("public"))
 //  a public cofiguration is set to make for storing public asset like image etc
 
 
-app.use(signedCookie())
+app.use(cookieParser())
 
 // cookie parser is used to access cookis of server from brower basically to performing CRUD OPERATION ON COOKIES
 

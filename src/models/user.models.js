@@ -7,7 +7,7 @@ import bcrypt from "bcrypt"
         username:{
             type: String,
             required: true,
-            unique: true,
+            unique: true, 
             lowercase: true,
             trim: true,
             index: true  // optimised the efficient searching in the database. it also hamper the performance
